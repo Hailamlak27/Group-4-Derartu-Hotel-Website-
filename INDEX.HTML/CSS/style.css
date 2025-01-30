@@ -16,6 +16,11 @@ a {
 li {
   list-style: none;
 }
+.fa-bars{
+  font-size: 24px;
+  cursor: pointer;
+ 
+}
 nav {
   background: #000;
   padding: 1rem 4rem;
@@ -26,6 +31,14 @@ nav {
   top: 0;
   height: 80px;
 }
+.logo img {
+  width: 80px;
+  border-radius: 5px;
+}
+.block h1 {
+  margin-right: 500px;
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -34,6 +47,7 @@ nav ul {
 nav ul li a {
   font-size: 18px;
 }
+
 nav ul li a::after {
   content: "";
   display: block;
@@ -55,9 +69,9 @@ nav ul li a:hover {
 .menu-icon {
   display: none;
 }
-.hero-section .left {
+/* .hero-section .left {
   text-align: center;
-}
+} */
 /* Hero section */
 /* .hero-section{
     height: calc(100vh-80px);
@@ -132,7 +146,8 @@ nav ul li a:hover {
   color: #000;
 }
 #trendsection {
-  padding: 100px 4rem;
+  padding: 20px 4rem;
+  
   /* padding-top: 40px; */
 }
 
@@ -197,21 +212,7 @@ nav ul li a:hover {
   font-size: 13px;
   padding-top: 20px;
 }
-/* blog section */
-/* #blogsection{
-  padding: 100px 4rem;
-}
-#blogsection{
-  padding: 100px 4rem;
-}
-.blog-container{
-  padding: 60px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}  */
+
 /* form registration */
 .form-registration {
   background-color: #344a72;
@@ -232,7 +233,6 @@ nav ul li a:hover {
   margin-top: 60px;
 }
 .form-registration {
-  background-color: white;
   border-radius: 3px;
 }
 h1 {
@@ -283,8 +283,50 @@ p {
   text-align: center;
   color: white;
   font-size: 15px;
-  margin-top: -10px;
+  
 }
 .para-2 a {
-  color: #49c1a2;
+  color: red
+  
 }
+/* footer */
+footer{
+  padding: 40px 4rem;
+  background: #000;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+
+}
+.col h3{
+  font-weight: 700;
+}
+.col p{
+  font-size: 13px;
+  color: #8b8b8b;
+  
+}
+.col-1{
+  width: 300px;
+}
+.col h3{
+  padding-bottom: 20px;
+}
+.col li{
+  color: #8b8b8b
+}
+@media(max-width:800px){
+  nav ul{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #000;
+    flex-direction: column;
+    overflow: hidden;
+    transition:max-height 0.5s;
+  }
+}
+
